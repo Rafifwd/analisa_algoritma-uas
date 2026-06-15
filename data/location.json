@@ -1,0 +1,41 @@
+{
+    "info": "Parameter ekonomi dan operasional simulasi last-mile delivery.",
+    "vehicle": {
+        "max_load_kg": 30.0,
+        "fuel_ratio_full_liter_per_km": 0.05,
+        "fuel_ratio_empty_liter_per_km": 0.02,
+        "note": "Rasio konsumsi BBM diinterpolasi linear berdasarkan persentase beban terhadap max_load_kg"
+    },
+    "packages": {
+        "note": "Index sesuai node id di locations.json. Index 0 (Hub) bernilai 0 kg.",
+        "weight_kg": [
+            0,
+            3.0,
+            2.0,
+            3.0,
+            1.5,
+            3.5,
+            2.0,
+            3.0,
+            2.5,
+            1.0,
+            2.5,
+            2.0,
+            2.5
+        ]
+    },
+    "scenarios": {
+        "subsidi": {
+            "label": "Skenario Subsidi - BBM Murah",
+            "fuel_price_per_liter_idr": 5000
+        },
+        "krisis": {
+            "label": "Skenario Krisis - BBM Mahal",
+            "fuel_price_per_liter_idr": 20000
+        }
+    },
+    "cloud_cost": {
+        "rate_idr_per_ms": 50,
+        "note": "Biaya server cloud pay-as-you-go, dihitung dari waktu eksekusi algoritma dalam milidetik"
+    }
+}

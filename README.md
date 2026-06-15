@@ -1,5 +1,13 @@
 # Simulasi Rute Pengiriman Last-Mile: Analisis Komparatif Algoritma Greedy vs. DFS Backtracking
 
+### Penulis:
+*   Muhammad Andri Firmansyah - 140810240009
+*   Dhaifan Ramadhani Julliawan - 140810240015
+*   Zakky Auliyan - 140810240077
+*   Muhammad Rafif Widyadhana - 140810240083
+
+---
+
 Proyek ini adalah sistem simulasi untuk membandingkan rute pengiriman *last-mile* menggunakan dua pendekatan algoritma: **Greedy Nearest Neighbor** (heuristik) dan **Depth-First Search (DFS) Backtracking dengan Pruning** (eksak). Simulasi ini bertujuan membantu pengambil keputusan bisnis dalam menentukan rute yang meminimalkan *Total Cost of Ownership* (TCO) berdasarkan variasi skenario harga bahan bakar minyak (BBM).
 
 Sistem membaca data input dari tiga file JSON eksternal:

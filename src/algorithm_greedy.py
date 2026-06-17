@@ -1,6 +1,6 @@
 import time
 
-def run_greedy_tsp(distance_matrix):
+def solve_greedy(distance_matrix):
     """
     Algoritma Greedy Nearest Neighbor dari scratch.
     Dimulai dari Hub (index 0), mencari titik terdekat yang belum dikunjungi secara iteratif.

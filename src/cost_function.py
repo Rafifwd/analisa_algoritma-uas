@@ -3,7 +3,7 @@ def calculate_dynamic_fuel_ratio(current_load_kg, max_load_kg, ratio_full, ratio
     Menghitung rasio konsumsi BBM (liter/km) menggunakan interpolasi linear 
     berdasarkan persentase beban paket yang dibawa motor.
     """
-    persentase_beban = current_load_kg / max_load_kg
+    persentase_beban = max(0.0, min(1.0, current_load_kg / max_load_kg))
     selisih_rasio = ratio_full - ratio_empty
     
     current_ratio = ratio_empty + (persentase_beban * selisih_rasio)

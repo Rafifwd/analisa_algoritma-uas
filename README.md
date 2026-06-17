@@ -11,7 +11,7 @@
 Proyek ini adalah sistem simulasi untuk membandingkan rute pengiriman *last-mile* menggunakan dua pendekatan algoritma: **Greedy Nearest Neighbor** (heuristik) dan **Depth-First Search (DFS) Backtracking dengan Pruning** (eksak). Simulasi ini bertujuan membantu pengambil keputusan bisnis dalam menentukan rute yang meminimalkan *Total Cost of Ownership* (TCO) berdasarkan variasi skenario harga bahan bakar minyak (BBM).
 
 Sistem membaca data input dari tiga file JSON eksternal:
-- `locations.json`: Menyimpan data koordinat atau informasi lokasi pengiriman.
+- `location.json`: Menyimpan data koordinat atau informasi lokasi pengiriman.
 - `distance_matrix.json`: Menyimpan matriks jarak antar-lokasi.
 - `config.json`: Menyimpan konfigurasi parameter sistem seperti efisiensi kendaraan dan biaya komputasi.
 
